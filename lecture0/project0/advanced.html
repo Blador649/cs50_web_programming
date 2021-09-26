@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Google Advanced Images</title>
+    </head>
+    <body>
+
+        <div class="nav-container">
+            <img src="images/google1.png" alt="Small logo" class="small-logo">
+            <ul class="ul-container">
+                <a class="nav-item" href="index.html">Google Search</a>
+                <!-- <a class="nav-item" href="images.html">Images Search</a>
+                <a class="nav-item" href="advanced.html">Advanced Search</a> -->
+            </ul>
+        </div>
+
+        <div class="appbar">
+            <label style="margin-left:10px">Advanced Search</label>
+            <div class="underline"></div>
+        </div>
+
+        <div class="search-form">
+            <form action="https://google.com/search">
+                <div class="find-container">
+                    <p class="label-item">Find pages with...</p>
+                    <div class="find-item">
+                        <label class="label-item"for="">all these words:</label>
+                        <input class="text-submit" type="text" name="as_q" autofocus>
+                    </div>
+                    <div class="find-item">
+                        <label class="label-item"for="">this exact word or phrase:</label>
+                        <input class="text-submit" type="text" name="as_epq">
+                    </div>
+                    <div class="find-item">
+                        <label class="label-item"for="">any of these words:</label>
+                        <input class="text-submit" type="text" name="as_oq">
+                    </div>
+                    <div class="find-item">
+                        <label class="label-item"for="">none of these words:</label>
+                        <input class="text-submit" type="text" name="as_eq">
+                    </div>
+                    <input class="submit-button" id="bluebutton" type="submit" value="Advance Search">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
