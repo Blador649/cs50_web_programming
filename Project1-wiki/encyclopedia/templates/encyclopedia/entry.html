@@ -1,0 +1,17 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    {{ entry_title }}
+{% endblock %}
+
+{% block body %}
+    <!-- Display entry page content -->
+    {{ entry | safe }}
+    <!-- button for edit and back home -->
+    <a href="/wiki/{{ entry_title }}/edit">
+        <button class="btn btn-primary">Edit</button>
+    </a>
+    <a href="{% url 'index' %}">
+        <button class="btn btn-primary">Back</button>
+    </a>
+{% endblock %}
