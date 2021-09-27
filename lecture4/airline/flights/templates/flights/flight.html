@@ -7,8 +7,7 @@
         <li>Destination: {{ flight.destination }}</li>
         <li>Duration: {{ flight.duration }} minutes</li>
     </ul>
-    <a href="{% url 'index' %}">All Flights</a>
-
+    
     <h2>Passengers:</h2>
     <ul>
         {% for passenger in passengers %}
@@ -17,7 +16,9 @@
             <li>No Passengers.</li>
         {% endfor %}
     </ul>
-    <!-- <form action="" method="POST">
+    <a href="{% url 'index' %}">All Flights</a>
+
+    <form action="{% url 'book' flight.id %}" method="post">
         {% csrf_token %}
         <select name="passenger" id="">
             {% for passenger in non_passengers %}
@@ -25,5 +26,5 @@
             {% endfor %}
         </select>
         <input type="submit" value="Add">
-    </form> -->
+    </form>
 {% endblock %}
