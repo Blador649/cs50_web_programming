@@ -4,7 +4,11 @@ from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render
 from django.urls import reverse
 
-from .models import User
+from django import forms
+from django.forms import ModelForm, modelformset_factory
+
+from .models import *
+from django.contrib.auth.decorators import login_required
 
 
 def index(request):
