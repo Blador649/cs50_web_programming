@@ -51,3 +51,4 @@ class Picture(models.Model):
     listing = models.ForeignKey(Listing, on_delete=models.CASCADE, related_name="get_pictures")
     picture = models.ImageField(upload_to="images/")
     alt_text = models.CharField(max_length=140)
+
